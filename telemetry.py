@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 
+import random
+from time import sleep 
+import config
+
 
 class TemperatureSensor:
 
     def read(_self):
-        return 10
+        return random.randint(1, 100)
 
 
 if __name__ == '__main__':
@@ -14,3 +18,4 @@ if __name__ == '__main__':
     while True:
         temperature =temperatureSensor.read() 
         print(temperature)
+        sleep(config.time_delay_s)
