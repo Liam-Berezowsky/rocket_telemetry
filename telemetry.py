@@ -6,21 +6,25 @@ import config
 import smbus2
 import bme280
 
-class TemperatureSensor:
+class EnvironmentSensor:
 
-    def read(_self):
-        return random.randint(1, 100)
+    def __init__(self, bus, address):
+        self.bus = bus
+        self.address = address
+        self.calibration_params = bme280.load_calibration_params(bus, address)
+
+    def read(self):
+        return bme280.sample(self.bus, self.address, self.calibration_params)
 
 
 if __name__ == '__main__':
     print('telemetry active')
-    address = 0x76
     bus = smbus2.SMBus(1)
-    calibration_params = bme280.load_calibration_params(bus, address)
+    esensor = EnvironmentSensor(bus, 0x76)
     starttime = time()
     print("time,MET,temperature,pressure,humidity")
     while True:
-        data = bme280.sample(bus, address, calibration_params)
+        data = esensor.read()
         now = time()
         met = now - starttime
         now_str = strftime("%d/%m/%Y %H:%M:%S", gmtime(now))
