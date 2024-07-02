@@ -106,21 +106,24 @@ if __name__ == '__main__':
     esensor = EnvironmentSensor(bus, 0x76)
     psensor = PositionalSensor(bus, 0x68)
     timer = Timer()
-    print("time,MET,temperature,pressure,humidity,acc_x,acc_y,acc_z,gyr_x,gyr_y,gyr_z")
-    while True:
-        edata = esensor.read()
-        pdata = psensor.read()
-        print("{},{:.4f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f}".format(
-            timer.str(),
-            timer.met(),
-            edata.temperature, 
-            edata.pressure, 
-            edata.humidity,
-            pdata.Ax,
-            pdata.Ay,
-            pdata.Az,
-            pdata.Gx,
-            pdata.Gy,
-            pdata.Gz
-            ))
-        sleep(config.time_delay_s)
+
+    with open("log.csv","w") as log:
+        log.write("time,MET,temperature,pressure,humidity,acc_x,acc_y,acc_z,gyr_x,gyr_y,gyr_z\n")
+        while True:
+            edata = esensor.read()
+            pdata = psensor.read()
+            log.write("{},{:.4f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f},{:.2f}\n".format(
+                timer.str(),
+                timer.met(),
+                edata.temperature, 
+                edata.pressure, 
+                edata.humidity,
+                pdata.Ax,
+                pdata.Ay,
+                pdata.Az,
+                pdata.Gx,
+                pdata.Gy,
+                pdata.Gz
+                ))
+            log.flush()
+            sleep(config.time_delay_s)
