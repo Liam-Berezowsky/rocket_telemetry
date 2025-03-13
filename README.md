@@ -6,19 +6,19 @@ This code supports a Raspberry Pi telemetry system.
 
 Running the telemetry.py with appropriate electronic wiring will output a CSV with the raw data for:
 
-|Column|Description|
-|------|-----------|
-|time|data point timestamp|
-|MET|Mission elapsed time|
-|temperature|Ambient temperature|
-|pressure|Barometric pressure|
-|humidity|Relative humidity|
-|acc_x|X axis translation acceleration|
-|acc_y|Y axis translation acceleration|
-|acc_z|Z axis translation acceleration|
-|gyr_x|X axis rotation acceleration|
-|gyr_y|Y axis rotation acceleration|
-|gyr_z|Z axis rotation acceleration|
+| Column | Description |
+| ------ | ----------- |
+| time| data point timestamp |
+| MET | Mission elapsed time |
+| temperature | Ambient temperature |
+| pressure | Barometric pressure |
+| humidity | Relative humidity |
+| acc_x |X axis translation acceleration |
+| acc_y | Y axis translation acceleration |
+| acc_z | Z axis translation acceleration |
+| gyr_x | X axis rotation acceleration |
+| gyr_y | Y axis rotation acceleration |
+| gyr_z | Z axis rotation acceleration |
 
 The next step is to calibrate these values into standard units after environment experimentation
 
