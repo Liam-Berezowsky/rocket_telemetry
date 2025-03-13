@@ -20,12 +20,14 @@ Running the telemetry.py with appropriate electronic wiring will output a CSV wi
 | gyr_y | Y axis rotation acceleration |
 | gyr_z | Z axis rotation acceleration |
 
-The next step is to calibrate these values into standard units after environment experimentation
+The next step is to document this a bit better, calibrate these values into standard units after environment experimentation, and reduce the unit to fit into the Quest Courier rocket that can carry a payload.
 
+1. Document the wiring with photos
+1. Solder the electronics onto a single board that fits into the Quest Courier payload bay
 1. Some time in the fridge and outside to match temperature value to real temperature (or at least calibrate better)
-2. Use real altitude differences of some known structures to calibrate the altitude using pressure value
-3. Compare interior home humidity from Ecobee to calibrate humidity
-4. Measure the acceleration using the unit attached to my RC car. Not sure yet about rotation.
+1. Use real altitude differences of some known structures to calibrate the altitude using pressure value
+1. Compare interior home humidity from Ecobee to calibrate humidity
+1. Measure the acceleration using the unit attached to my RC car. Not sure yet about rotation.
 
 # Images
 
