@@ -4,7 +4,7 @@
 
 ## Power Management Unit
 
-<img src="images/powermanagement.png" alt="Alt text" width="600" />
+<img src="images/powermanagement.jpg" alt="Alt text" width="600" />
 
 # My personal Reminders
 
