@@ -1,8 +1,14 @@
 # rocket_telemetry
 
-# how to
+# Images
 
-## connect
+## Power Management Unit
+
+<img src="images/powermanagement.png" alt="Alt text" width="600" />
+
+# My personal Reminders
+
+## connect over wifi
 
 ssh liam@192.168.1.180
 cd rocket_telemetry
