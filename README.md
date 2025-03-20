@@ -46,7 +46,7 @@ The next step is to document this a bit better, calibrate these values into stan
 
 <img src="images/accelerometer.jpg" alt="Accelerometer Wiring" width="600" />
 
-## Temperature Sensor
+## Temperature, Air Pressure, Humidity Environmental Sensor
 
 <img src="images/temperature.jpg" alt="Temperature Sensor Wiring" width="600" />
 
