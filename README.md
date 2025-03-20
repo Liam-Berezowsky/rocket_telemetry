@@ -33,19 +33,19 @@ The next step is to document this a bit better, calibrate these values into stan
 
 ## Raspberry Pi in Prototyping Backpack
 
-<img src="images/raspberrypi.jpg" alt="Alt text" width="300" />
+<img src="images/raspberrypi.jpg" alt="Raspberry Pi in Prototype Mode" width="300" />
 
 ## Six Axis Accelerometer
 
-<img src="images/accelerometer.jpg" alt="Alt text" width="300" />
+<img src="images/accelerometer.jpg" alt="Accelerometer Wiring" width="300" />
 
 ## Temperature Sensor
 
-<img src="images/temperature_sensor.jpg" alt="Alt text" width="300" />
+<img src="images/temperature_sensor.jpg" alt="Temperature Sensor Wiring" width="300" />
 
 ## Power Management Unit
 
-<img src="images/new_powermanagement.jpg" alt="Alt text" width="300" />
+<img src="images/new_powermanagement.jpg" alt="Power Management Wiring" width="300" />
 
 # Some Personal Reminders
 
