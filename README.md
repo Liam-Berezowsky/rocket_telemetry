@@ -22,14 +22,21 @@ Running the telemetry.py with appropriate electronic wiring will output a CSV wi
 
 The next step is to document this a bit better, calibrate these values into standard units after environment experimentation, and reduce the unit to fit into the Quest Courier rocket that can carry a payload.
 
-1. Document the wiring with photos
 1. Solder the electronics onto a single board that fits into the Quest Courier payload bay
 1. Some time in the fridge and outside to match temperature value to real temperature (or at least calibrate better)
 1. Use real altitude differences of some known structures to calibrate the altitude using pressure value
 1. Compare interior home humidity from Ecobee to calibrate humidity
 1. Measure the acceleration using the unit attached to my RC car. Not sure yet about rotation.
 
-# Images
+# Wiring Images
+
+## Components Used
+
+* Raspberry Pi Zero W
+* PowerBoost 500 Charger
+* MPU-6050 6-Axis Gyro Accelerometer Module
+* BME280 3.3V High Precision Altimeter, Atmospheric Pressue, Temperature, and humidity sensor
+* Various rechargable lithium Ion RC / Drone batteries
 
 ## Raspberry Pi in Prototyping Backpack
 
